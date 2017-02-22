@@ -5,17 +5,20 @@ import java.util.Arrays;
 /**
  * Created by johncollins on 2/22/17.
  */
-public class myArrayList<T>
+public class MyArrayList<T>
 {
-    private T[] empty;
-    private T[] temp;
-    private T[] holder;
-    private int mySize = 0;
+    private T t;
+    private Object[] empty;
+    private Object[] temp;
+    private Object[] holder;
+    private int mySize;
     private boolean myEmpty;
 
-    public <T> myArrayList()
+    public MyArrayList()
     {
+        holder = new Object[10];
         myEmpty = true;
+        mySize = 0;
     }
 
     public int getMySize()
@@ -23,10 +26,10 @@ public class myArrayList<T>
         return mySize;
     }
 
-    public void add(T t)
+    public void myAdd(T t)
     {
         //copy holder, increase size, add new T at end, copy back to holder. mySize++
-        temp = Arrays.copyOf(holder, holder.length / 2 + holder.length);
+        temp = Arrays.copyOf(holder, holder.length + 10);
         temp[mySize] = t;
         holder = Arrays.copyOf(temp, temp.length);
         temp = empty;
@@ -34,7 +37,7 @@ public class myArrayList<T>
 
     }
 
-    public T myGetAt(int i)
+    public Object myGetAt(int i)
     {
         return holder[i];
     }
@@ -54,7 +57,7 @@ public class myArrayList<T>
         mySize = 0;
     }
 
-    public boolean myIsEmpty()
+    public boolean isMyEmpty()
     {
         myEmpty = mySize == 0 ? true : false;
         return myEmpty;
