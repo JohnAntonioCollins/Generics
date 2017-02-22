@@ -13,6 +13,7 @@ public class MyArrayList<T>
     private Object[] holder;
     private int mySize;
     private boolean myEmpty;
+    boolean contains;
 
     public MyArrayList()
     {
@@ -28,6 +29,7 @@ public class MyArrayList<T>
 
     public void myAdd(T t)
     {
+        this.myContains(t);
         //copy holder, increase size, add new T at end, copy back to holder. mySize++
         temp = Arrays.copyOf(holder, holder.length + 10);
         temp[mySize] = t;
@@ -71,8 +73,26 @@ public class MyArrayList<T>
         return myEmpty;
     }
 
+    private void doesContain(T t)
+    {
+        contains = false;
+        //if any T in holder .equals t, return true
+        for (Object i : holder
+                )
+        {
+            if (t.equals(i))
+            {
+                contains = true;
+            }
+        }
+
+    }
+
     public boolean myContains(T t)
     {
+        this.doesContain(t);
+        return contains;
+        /*
         boolean contains = false;
         //if any T in holder .equals t, return true
         for (Object i : holder
@@ -84,6 +104,7 @@ public class MyArrayList<T>
             }
         }
         return contains;
+        */
     }
 
 }

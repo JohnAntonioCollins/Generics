@@ -6,10 +6,12 @@ package collins.john;
 public class MySet<T> extends MyArrayList
 {
 
-public void myAddtoSet(T t)
-{
-    if(!this.myContains(t)){
-        this.myAdd(t);
+    public void myAddtoSet(T t)
+    {
+        if (!this.myContains(t))
+        {
+            this.myAdd(t);
+        }
     }
-}
+
 }
