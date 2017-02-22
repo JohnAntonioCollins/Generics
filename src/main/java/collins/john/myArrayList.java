@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class myArrayList<T>
 {
-
+    private T[] empty;
     private T[] temp;
     private T[] holder;
     private int mySize = 0;
@@ -41,8 +41,10 @@ public class myArrayList<T>
     {
         holder[i] = t;
     }
-public void myClear(){
-        temp.length
-}
+
+    public void myClear()
+    {
+        temp = empty;
+    }
 
 }
