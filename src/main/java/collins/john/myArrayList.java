@@ -11,10 +11,11 @@ public class myArrayList<T>
     private T[] temp;
     private T[] holder;
     private int mySize = 0;
+    private boolean myEmpty;
 
     public <T> myArrayList()
     {
-        //does it need a constructor?
+        myEmpty = true;
     }
 
     public int getMySize()
@@ -28,6 +29,7 @@ public class myArrayList<T>
         temp = Arrays.copyOf(holder, holder.length / 2 + holder.length);
         temp[mySize] = t;
         holder = Arrays.copyOf(temp, temp.length);
+        temp = empty;
         mySize++;
 
     }
@@ -39,12 +41,23 @@ public class myArrayList<T>
 
     public void mySetAt(T t, int i)
     {
+        if (i > mySize)
+        {
+            i = mySize;
+        }
         holder[i] = t;
     }
 
     public void myClear()
     {
-        temp = empty;
+        holder = empty;
+        mySize = 0;
+    }
+
+    public boolean myIsEmpty()
+    {
+        myEmpty = mySize == 0 ? true : false;
+        return myEmpty;
     }
 
 }
