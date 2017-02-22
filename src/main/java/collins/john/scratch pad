@@ -9,3 +9,6 @@ isEmpty
 put(K V)
 remove: removes key/val entry
 size: returns size of key set
+NEED INDEX??
+
+MAP myPut

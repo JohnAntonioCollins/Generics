@@ -5,11 +5,63 @@ import java.util.Arrays;
 /**
  * Created by johncollins on 2/22/17.
  */
-public class MyMap<K, V>
+public class MyMap<P, K, V>
 {
-    private K k;
-    private V v;
-public myPut()
+    private P pair;
+    Keys<Pair> keys;
+
+    public MyMap()
+    {
+        keys = new Keys<>();
+    }
+
+    public MyMap(K k, V v)
+    {
+        keys = new Keys<>();
+        this.myPut(k, v);
+    }
+
+    public void myPut(K k, V v)
+    {
+//1. see if key is new, if so add key to Key, add value to Value.  make map of Tuples
+        Pair pair = new Pair(k, v);
+        keys.myAdd(pair);
+        pair.index = keys.getMySize() - 1;
+    }
+
+    public V get(K k) // needs try/catch
+    {
+        Pair match = null;
+        for (int i = 0; i < keys.getMySize(); i++)
+        {
+            if (keys.myGetAt(i).equals(k))
+            {
+                match = (Pair) keys.myGetAt(i);
+            }
+        }
+        return (V) match.getValue();
+
+    }
+
+
+    ////////////Pair class////////
+    class Pair<K, V>
+    {
+        public final K key;
+        public V value;
+        public int index;
+
+        public Pair(K a, V b)
+        {
+            key = a;
+            value = b;
+        }
+
+        public V getValue()
+        {
+            return value;
+        }
+    }
 
     private class Keys<T>
     {
@@ -37,7 +89,7 @@ public myPut()
         public void myAdd(T t)
         {
             this.doesContain(t);
-            if(!contains)
+            if (!contains)
             {
                 //copy holder, increase size, add new T at end, copy back to holder. mySize++
                 temp = Arrays.copyOf(holder, holder.length + 10);
@@ -90,11 +142,9 @@ public myPut()
         }
 
 
-
     }
 
-
-
+    ////////////////////////////MAY NOT NEED
     private class Values<T>
     {
         private T t;
