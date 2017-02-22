@@ -31,8 +31,18 @@ public class myArrayList<T>
         mySize++;
 
     }
-    public T myGetAt(int i){
+
+    public T myGetAt(int i)
+    {
         return holder[i];
     }
+
+    public void mySetAt(T t, int i)
+    {
+        holder[i] = t;
+    }
+public void myClear(){
+        temp.length
+}
 
 }
