@@ -57,4 +57,13 @@ public class MyArrayListTest
         int expected = 1;
         assertEquals("should return 1, has only 1 thing", expected, actual);
     }
+    @Test
+    public void myClearTest(){
+        testMyArrayList.myAdd("one");
+        testMyArrayList.myAdd("two");
+        testMyArrayList.myClear();
+        int actual = testMyArrayList.getMySize();
+        int expected = 0;
+        assertEquals("should be 0, empty myArrayList", expected, actual);
+    }
 }
