@@ -92,19 +92,7 @@ public class MyArrayList<T>
     {
         this.doesContain(t);
         return contains;
-        /*
-        boolean contains = false;
-        //if any T in holder .equals t, return true
-        for (Object i : holder
-                )
-        {
-            if (t.equals(i))
-            {
-                contains = true;
-            }
-        }
-        return contains;
-        */
+
     }
 
 }

@@ -41,7 +41,7 @@ public class MySetTest
         //String expected = "fail";//fail test
         assertEquals("should say 'testString' at index 0", expected, actual);
     }
-    
+
     @Test
     public void myContainsTest(){
         String s = "testString";
