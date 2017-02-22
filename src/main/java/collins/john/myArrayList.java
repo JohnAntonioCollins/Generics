@@ -37,19 +37,27 @@ public class MyArrayList<T>
 
     }
 
+    public void myAdd(T t, int i)
+    {
+        if (i < mySize)
+        {
+            holder[i] = t;
+        } else
+        {
+            //copy holder, increase size, add new T at end, copy back to holder. mySize++
+            temp = Arrays.copyOf(holder, holder.length + 10);
+            temp[mySize] = t;
+            holder = Arrays.copyOf(temp, temp.length);
+            temp = empty;
+            mySize++;
+        }
+    }
+
     public Object myGetAt(int i)
     {
         return holder[i];
     }
 
-    public void mySetAt(T t, int i)
-    {
-        if (i > mySize)
-        {
-            i = mySize;
-        }
-        holder[i] = t;
-    }
 
     public void myClear()
     {
@@ -61,6 +69,21 @@ public class MyArrayList<T>
     {
         myEmpty = mySize == 0 ? true : false;
         return myEmpty;
+    }
+
+    public boolean myContains(T t)
+    {
+        boolean contains = false;
+        //if any T in holder .equals t, return true
+        for (Object i : holder
+                )
+        {
+            if (t.equals(i))
+            {
+                contains = true;
+            }
+        }
+        return contains;
     }
 
 }

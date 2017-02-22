@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e76b3a-3c2b-4183-ba5e-b1e2b5624f7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/collins/john/myArrayList.java" afterPath="$PROJECT_DIR$/src/main/java/collins/john/myArrayList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/collins/john/MyArrayListTest.java" afterPath="$PROJECT_DIR$/src/test/java/collins/john/MyArrayListTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,13 +47,13 @@
       <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
               <folding>
                 <element signature="e#426#427#0" expanded="true" />
                 <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#1225#1226#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +62,8 @@
       <file leaf-file-name="MyArrayListTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/collins/john/MyArrayListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -96,8 +95,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/collins/john/myArrayList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/collins/john/MyArrayListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/collins/john/MyArrayListTest.java" />
       </list>
     </option>
   </component>
@@ -232,7 +231,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest.myAddTest">
+  <component name="RunManager" selected="JUnit.MyArrayListTest.myAddOVERRIDEtest">
     <configuration default="false" name="MyArrayListTest.isMyEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -285,7 +284,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MyArrayListTest.myContainsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="collins.john.*" />
@@ -297,8 +296,60 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="collins.john" />
       <option name="MAIN_CLASS_NAME" value="collins.john.MyArrayListTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="myContainsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyArrayListTest.getMySizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="collins.john.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Generics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="collins.john" />
+      <option name="MAIN_CLASS_NAME" value="collins.john.MyArrayListTest" />
+      <option name="METHOD_NAME" value="getMySizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyArrayListTest.myAddOVERRIDEtest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="collins.john.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Generics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="collins.john" />
+      <option name="MAIN_CLASS_NAME" value="collins.john.MyArrayListTest" />
+      <option name="METHOD_NAME" value="myAddOVERRIDEtest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -684,16 +735,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.isMyEmptyTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.myAddTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.myContainsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.getMySizeTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.myAddOVERRIDEtest" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.myAddTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.isMyEmptyTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.myAddOVERRIDEtest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.getMySizeTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.myContainsTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.myAddTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.isMyEmptyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -707,44 +762,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487790106222</updated>
-      <workItem from="1487790107958" duration="8464000" />
+      <workItem from="1487790107958" duration="10225000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyArrayListTest - 2017.02.22 at 15h 59m 27s.xml">
-      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getMySizeTest - 2017.02.22 at 16h 44m 50s.xml">
+      <configuration name="MyArrayListTest.getMySizeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_isMyEmptyTest - 2017.02.22 at 16h 01m 22s.xml">
-      <configuration name="MyArrayListTest.isMyEmptyTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getMySizeTest - 2017.02.22 at 16h 44m 57s.xml">
+      <configuration name="MyArrayListTest.getMySizeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 15h 44m 58s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getMySizeTest - 2017.02.22 at 16h 45m 09s.xml">
+      <configuration name="MyArrayListTest.getMySizeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 15h 46m 25s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_myAddOVERRIDEtest - 2017.02.22 at 16h 56m 19s.xml">
+      <configuration name="MyArrayListTest.myAddOVERRIDEtest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 15h 48m 39s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_myAddOVERRIDEtest - 2017.02.22 at 16h 56m 29s.xml">
+      <configuration name="MyArrayListTest.myAddOVERRIDEtest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 15h 59m 03s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_myAddOVERRIDEtest - 2017.02.22 at 16h 56m 37s.xml">
+      <configuration name="MyArrayListTest.myAddOVERRIDEtest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 16h 00m 55s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_myContainsTest - 2017.02.22 at 16h 39m 36s.xml">
+      <configuration name="MyArrayListTest.myContainsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 16h 01m 44s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_myContainsTest - 2017.02.22 at 16h 40m 10s.xml">
+      <configuration name="MyArrayListTest.myContainsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 16h 01m 56s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_myContainsTest - 2017.02.22 at 16h 40m 36s.xml">
+      <configuration name="MyArrayListTest.myContainsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_myAddTest - 2017.02.22 at 16h 27m 17s.xml">
-      <configuration name="MyArrayListTest.myAddTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_myContainsTest - 2017.02.22 at 16h 40m 47s.xml">
+      <configuration name="MyArrayListTest.myContainsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8464000" />
+    <option name="totallyTimeSpent" value="10225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-274" y="-821" width="1280" height="773" extended-state="0" />
@@ -819,21 +874,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="285">
+          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
           <folding>
             <element signature="e#426#427#0" expanded="true" />
             <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/collins/john/MyArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#264#265#0" expanded="true" />
