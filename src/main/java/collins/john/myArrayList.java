@@ -31,7 +31,7 @@ public class MyArrayList<T>//should make iterable
     {
         this.myContains(t);
         //copy holder, increase size, add new T at end, copy back to holder. mySize++
-        temp = Arrays.copyOf(holder, holder.length + 10);
+        temp = Arrays.copyOf(holder, holder.length + 1);
         temp[mySize] = t;
         holder = Arrays.copyOf(temp, temp.length);
         temp = empty;
@@ -49,6 +49,7 @@ public class MyArrayList<T>//should make iterable
             holder = Arrays.copyOf(holder, holder.length + 1);
             holder[mySize] = t;
             mySize++;
+            Arrays.sort(holder);
         }
     }
 
@@ -67,6 +68,7 @@ public class MyArrayList<T>//should make iterable
         }
         mySize--;
         holder = Arrays.copyOf(holder, mySize);
+        Arrays.sort(holder);
     }
 
     public Object myGetAt(int i)

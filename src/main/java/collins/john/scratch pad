@@ -13,5 +13,6 @@ NEED INDEX??
 
 -MAP myPut
 
-TODO MyArrayList myRemove
+-MyArrayList myRemove
 TODO MySet myRemove
+TODO change .equals to deep equals
