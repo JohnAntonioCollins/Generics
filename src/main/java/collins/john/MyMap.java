@@ -23,29 +23,40 @@ public class MyMap<P, K, V>
 
     public void myPut(K k, V v)
     {
-//1. see if key is new, if so add key to Key, add value to Value.  make map of Tuples
+//1. see if key is new, if so add key to Key, add value to Value.  make Set of Tuples
         Pair pair = new Pair(k, v);
         keys.myAdd(pair);
         pair.index = keys.getMySize() - 1;
     }
+    public void myRemove(K k){
 
-    public V get(K k) // needs try/catch
+    }
+
+    public V myGet(K k) // needs try/catch
     {
         Pair match = null;
         for (int i = 0; i < keys.getMySize(); i++)
         {
-            Pair query = (Pair) keys.myGetAt(i);
+            Pair query = keys.myGetAt(i);
             if (query.key.equals(k))
             {
-                match = (Pair) keys.myGetAt(i);
+                match = keys.myGetAt(i);
             }
         }
         return (V) match.value;
-
+    }
+    public void myClear(){
+        keys.myClear();
+    }
+    public int mySize(){
+        return keys.getMySize();
+    }
+    public boolean myIsEmpty(){
+        return keys.isMyEmpty();
     }
 
 
-    ////////////Pair class////////
+    ////////////PAIR CLASS////////
     class Pair<K, V>
     {
         public final K key;
@@ -57,13 +68,9 @@ public class MyMap<P, K, V>
             key = a;
             value = b;
         }
-
-        public V getValue()
-        {
-            return value;
-        }
     }
 
+    //////////KEYS CLASS/////////////
     private class Keys<Pair>
     {
 
@@ -93,20 +100,18 @@ public class MyMap<P, K, V>
             if (!contains)
             {
                 //copy holder, increase size, add new T at end, copy back to holder. mySize++
-                temp = Arrays.copyOf(holder, holder.length + 10);
+                temp = Arrays.copyOf(holder, holder.length + 1);
                 temp[mySize] = t;
                 holder = Arrays.copyOf(temp, temp.length);
                 temp = empty;
                 mySize++;
             }
-
         }
 
-        public Object myGetAt(int i)
+        public Pair myGetAt(int i)
         {
-            return holder[i];
+            return (Pair) holder[i];
         }
-
 
         public void myClear()
         {
@@ -132,17 +137,6 @@ public class MyMap<P, K, V>
                     contains = true;
                 }
             }
-
         }
-
-        public boolean myContains(Pair t)
-        {
-            this.doesContain(t);
-            return contains;
-
-        }
-
-
     }
-
 }

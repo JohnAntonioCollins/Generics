@@ -1,14 +1,17 @@
-clear
+-clear
 containsKey
 containsValue
 entrySet: list of key/val pairs
 keySet: list of keys
 values: list of values
-get(key): value
-isEmpty
-put(K V)
+-get(key): value
+-isEmpty
+-put(K V)
 remove: removes key/val entry
-size: returns size of key set
+-size: returns size of key set
 NEED INDEX??
 
-MAP myPut
+-MAP myPut
+
+TODO MyArrayList myRemove
+TODO MySet myRemove

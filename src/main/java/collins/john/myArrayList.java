@@ -46,17 +46,32 @@ public class MyArrayList<T>//should make iterable
         } else
         {
             //copy holder, increase size, add new T at end, copy back to holder. mySize++
-            temp = Arrays.copyOf(holder, holder.length + 10);
-            temp[mySize] = t;
-            holder = Arrays.copyOf(temp, temp.length);
-            temp = empty;
+            holder = Arrays.copyOf(holder, holder.length + 1);
+            holder[mySize] = t;
             mySize++;
         }
     }
 
+    public void myRemove(T t)
+    {
+
+    }
+
+    public void myRemove(int index)
+    {
+        int start = index;
+        for (int i = start; i < mySize; i++)
+        {
+            holder[index] = holder[index + 1];
+            index++;
+        }
+        mySize--;
+        holder = Arrays.copyOf(holder, mySize);
+    }
+
     public Object myGetAt(int i)
     {
-        return (T)holder[i];
+        return (T) holder[i];
     }
 
     public void myClear()
@@ -83,7 +98,6 @@ public class MyArrayList<T>//should make iterable
                 contains = true;
             }
         }
-
     }
 
     public boolean myContains(T t)
@@ -92,5 +106,4 @@ public class MyArrayList<T>//should make iterable
         return contains;
 
     }
-
 }
