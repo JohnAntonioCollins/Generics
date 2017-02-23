@@ -4,7 +4,7 @@
     <list default="true" id="c0e76b3a-3c2b-4183-ba5e-b1e2b5624f7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/collins/john/MyMap.java" afterPath="$PROJECT_DIR$/src/main/java/collins/john/MyMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/collins/john/scratch pad" afterPath="$PROJECT_DIR$/src/main/java/collins/john/scratch pad" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/collins/john/myArrayList.java" afterPath="$PROJECT_DIR$/src/main/java/collins/john/myArrayList.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,25 +56,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/collins/john/MyMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="540">
+              <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
               <folding>
                 <element signature="e#190#191#0" expanded="true" />
                 <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
+                <element signature="e#1179#1180#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyMapTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyMapTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/collins/john/MyMapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="240">
               <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,11 +117,11 @@
         <option value="$PROJECT_DIR$/src/main/java/collins/john/myArrayList.java" />
         <option value="$PROJECT_DIR$/src/test/java/collins/john/MyArrayListTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/collins/john/MySetTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java" />
         <option value="$PROJECT_DIR$/src/main/java/collins/john/scratch pad" />
         <option value="$PROJECT_DIR$/src/main/java/collins/john/MySet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/collins/john/MyMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/collins/john/MyMapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/collins/john/MyMap.java" />
       </list>
     </option>
   </component>
@@ -129,8 +139,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-175" />
-    <option name="y" value="-939" />
+    <option name="x" value="-177" />
+    <option name="y" value="-936" />
     <option name="width" value="1280" />
     <option name="height" value="773" />
   </component>
@@ -777,25 +787,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487790106222</updated>
-      <workItem from="1487790107958" duration="17282000" />
+      <workItem from="1487790107958" duration="18063000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyArrayListTest - 2017.02.22 at 17h 39m 10s.xml">
-      <configuration name="MyArrayListTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyMapTest_myPutTest - 2017.02.22 at 18h 53m 31s.xml">
       <configuration name="MyMapTest.myPutTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MyMapTest_myPutTest - 2017.02.22 at 18h 54m 21s.xml">
       <configuration name="MyMapTest.myPutTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyMapTest_myPutTest - 2017.02.22 at 18h 58m 48s.xml">
+      <configuration name="MyMapTest.myPutTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyMapTest_myPutTest - 2017.02.22 at 19h 08m 36s.xml">
+      <configuration name="MyMapTest.myPutTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="MySetTest - 2017.02.22 at 17h 45m 05s.xml">
       <configuration name="MySetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MySetTest_myAddToSetTest - 2017.02.22 at 17h 39m 41s.xml">
-      <configuration name="MySetTest.myAddToSetTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MySetTest_myAddToSetTest - 2017.02.22 at 17h 41m 11s.xml">
       <configuration name="MySetTest.myAddToSetTest" configurationId="JUnit" />
@@ -814,10 +824,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17282000" />
+    <option name="totallyTimeSpent" value="18063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-175" y="-939" width="1280" height="773" extended-state="0" />
+    <frame x="-177" y="-936" width="1280" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -927,14 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="92" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -962,25 +964,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/collins/john/MyMapTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/collins/john/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/collins/john/MyMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="540">
+          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
           <folding>
             <element signature="e#190#191#0" expanded="true" />
             <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/collins/john/MyMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

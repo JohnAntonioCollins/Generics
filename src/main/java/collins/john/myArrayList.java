@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by johncollins on 2/22/17.
  */
-public class MyArrayList<T>
+public class MyArrayList<T>//should make iterable
 {
     private T t;
     private Object[] empty;

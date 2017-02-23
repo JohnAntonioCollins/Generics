@@ -34,12 +34,13 @@ public class MyMap<P, K, V>
         Pair match = null;
         for (int i = 0; i < keys.getMySize(); i++)
         {
-            if (keys.myGetAt(i).equals(k))
+            Pair query = (Pair) keys.myGetAt(i);
+            if (query.key.equals(k))
             {
                 match = (Pair) keys.myGetAt(i);
             }
         }
-        return (V) match.getValue();
+        return (V) match.value;
 
     }
 
@@ -63,10 +64,10 @@ public class MyMap<P, K, V>
         }
     }
 
-    private class Keys<T>
+    private class Keys<Pair>
     {
 
-        private T t;
+        private Pair t;
         private Object[] empty;
         private Object[] temp;
         private Object[] holder;
@@ -86,7 +87,7 @@ public class MyMap<P, K, V>
             return mySize;
         }
 
-        public void myAdd(T t)
+        public void myAdd(Pair t)
         {
             this.doesContain(t);
             if (!contains)
@@ -119,7 +120,7 @@ public class MyMap<P, K, V>
             return myEmpty;
         }
 
-        private void doesContain(T t)
+        private void doesContain(Pair t)
         {
             contains = false;
             //if any T in holder .equals t, return true
@@ -134,106 +135,13 @@ public class MyMap<P, K, V>
 
         }
 
-        public boolean myContains(T t)
+        public boolean myContains(Pair t)
         {
             this.doesContain(t);
             return contains;
 
         }
 
-
-    }
-
-    ////////////////////////////MAY NOT NEED
-    private class Values<T>
-    {
-        private T t;
-        private Object[] empty;
-        private Object[] temp;
-        private Object[] holder;
-        private int mySize;
-        private boolean myEmpty;
-        boolean contains;
-
-        public Values()
-        {
-            holder = new Object[10];
-            myEmpty = true;
-            mySize = 0;
-        }
-
-        public int getMySize()
-        {
-            return mySize;
-        }
-
-        public void myAdd(T t)
-        {
-            this.myContains(t);
-            //copy holder, increase size, add new T at end, copy back to holder. mySize++
-            temp = Arrays.copyOf(holder, holder.length + 10);
-            temp[mySize] = t;
-            holder = Arrays.copyOf(temp, temp.length);
-            temp = empty;
-            mySize++;
-
-        }
-
-        public void myAdd(T t, int i)
-        {
-            if (i < mySize)
-            {
-                holder[i] = t;
-            } else
-            {
-                //copy holder, increase size, add new T at end, copy back to holder. mySize++
-                temp = Arrays.copyOf(holder, holder.length + 10);
-                temp[mySize] = t;
-                holder = Arrays.copyOf(temp, temp.length);
-                temp = empty;
-                mySize++;
-            }
-        }
-
-        public Object myGetAt(int i)
-        {
-            return holder[i];
-        }
-
-
-        public void myClear()
-        {
-            holder = empty;
-            mySize = 0;
-        }
-
-        public boolean isMyEmpty()
-        {
-            myEmpty = mySize == 0 ? true : false;
-            return myEmpty;
-        }
-
-        private void doesContain(T t)
-        {
-            contains = false;
-            //if any T in holder .equals t, return true
-            for (Object i : holder
-                    )
-            {
-                if (t.equals(i))
-                {
-                    contains = true;
-                }
-            }
-
-        }
-
-        public boolean myContains(T t)
-        {
-            this.doesContain(t);
-            return contains;
-
-        }
 
     }
 
