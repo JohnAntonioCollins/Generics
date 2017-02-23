@@ -39,8 +39,21 @@ public class MySet<T>
             holder = Arrays.copyOf(temp, temp.length);
             temp = empty;
             mySize++;
+            Arrays.sort(holder);
         }
 
+    }
+    public void myRemove(int index)
+    {
+        int start = index;
+        for (int i = start; i < mySize; i++)
+        {
+            holder[index] = holder[index + 1];
+            index++;
+        }
+        mySize--;
+        holder = Arrays.copyOf(holder, mySize);
+        Arrays.sort(holder);
     }
 
     public Object myGetAt(int i)
