@@ -16,7 +16,6 @@ public class MyMapTest
     public void setUp()
     {
         testMap = new MyMap();
-
     }
 
     @Test
@@ -24,9 +23,8 @@ public class MyMapTest
     {
         testMap.myPut("knock", "answer");
         String actual = testMap.get("knock").toString();
-        //String actual = "fake";
+        //String expected = "fake";
         String expected = "answer";
         assertEquals("should say 'answer'", expected, actual);
-
     }
 }

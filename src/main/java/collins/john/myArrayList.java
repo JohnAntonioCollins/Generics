@@ -36,7 +36,6 @@ public class MyArrayList<T>//should make iterable
         holder = Arrays.copyOf(temp, temp.length);
         temp = empty;
         mySize++;
-
     }
 
     public void myAdd(T t, int i)
@@ -57,9 +56,8 @@ public class MyArrayList<T>//should make iterable
 
     public Object myGetAt(int i)
     {
-        return holder[i];
+        return (T)holder[i];
     }
-
 
     public void myClear()
     {
