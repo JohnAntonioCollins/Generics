@@ -18,7 +18,7 @@ public class MySet<T>
 
     public MySet()
     {
-        holder = new Object[10];
+        holder = new Object[0];
         myEmpty = true;
         mySize = 0;
     }
@@ -31,22 +31,19 @@ public class MySet<T>
     public void myAdd(T t)
     {
         this.doesContain(t);
-        if(!contains)
+        if (!contains)
         {
-            //copy holder, increase size, add new T at end, copy back to holder. mySize++
-            temp = Arrays.copyOf(holder, holder.length + 10);
-            temp[mySize] = t;
-            holder = Arrays.copyOf(temp, temp.length);
-            temp = empty;
-            mySize++;
+            holder = Arrays.copyOf(holder, holder.length + 1);
+            holder[mySize] = t;
             Arrays.sort(holder);
+            mySize++;
         }
-
     }
+
     public void myRemove(int index)
     {
         int start = index;
-        for (int i = start; i < mySize; i++)
+        for (int i = start; i < mySize-1; i++)
         {
             holder[index] = holder[index + 1];
             index++;
@@ -56,9 +53,9 @@ public class MySet<T>
         Arrays.sort(holder);
     }
 
-    public Object myGetAt(int i)
+    public T myGetAt(int i)
     {
-        return holder[i];
+        return (T)holder[i];
     }
 
 
@@ -77,7 +74,6 @@ public class MySet<T>
     private void doesContain(T t)
     {
         contains = false;
-        //if any T in holder .equals t, return true
         for (Object i : holder
                 )
         {
@@ -86,28 +82,12 @@ public class MySet<T>
                 contains = true;
             }
         }
-
     }
 
     public boolean myContains(T t)
     {
         this.doesContain(t);
         return contains;
-        /*
-        boolean contains = false;
-        //if any T in holder .equals t, return true
-        for (Object i : holder
-                )
-        {
-            if (t.equals(i))
-            {
-                contains = true;
-            }
-        }
-        return contains;
-        */
+
     }
-
-
-
 }

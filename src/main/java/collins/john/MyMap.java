@@ -23,16 +23,23 @@ public class MyMap<P, K, V>
 
     public void myPut(K k, V v)
     {
-//1. see if key is new, if so add key to Key, add value to Value.  make Set of Tuples
         Pair pair = new Pair(k, v);
         keys.myAdd(pair);
         pair.index = keys.getMySize() - 1;
     }
     public void myRemove(K k){
-
+//this will remove a key/val pair and heal the index
+        for (int i = 0; i < keys.getMySize(); i++)
+        {
+            Pair query = keys.myGetAt(i);
+            if (query.key.equals(k))
+            {
+                keys.myRemove(i);
+            }
+        }
     }
 
-    public V myGet(K k) // needs try/catch
+    public V myGet(K k)
     {
         Pair match = null;
         for (int i = 0; i < keys.getMySize(); i++)
@@ -55,7 +62,6 @@ public class MyMap<P, K, V>
         return keys.isMyEmpty();
     }
 
-
     ////////////PAIR CLASS////////
     class Pair<K, V>
     {
@@ -73,7 +79,6 @@ public class MyMap<P, K, V>
     //////////KEYS CLASS/////////////
     private class Keys<Pair>
     {
-
         private Pair t;
         private Object[] empty;
         private Object[] temp;
@@ -99,13 +104,24 @@ public class MyMap<P, K, V>
             this.doesContain(t);
             if (!contains)
             {
-                //copy holder, increase size, add new T at end, copy back to holder. mySize++
                 temp = Arrays.copyOf(holder, holder.length + 1);
                 temp[mySize] = t;
                 holder = Arrays.copyOf(temp, temp.length);
                 temp = empty;
                 mySize++;
             }
+        }
+        public void myRemove(int index)
+        {
+            int start = index;
+            for (int i = start; i < mySize-1; i++)
+            {
+                holder[index] = holder[index + 1];
+                index++;
+            }
+            mySize--;
+            holder = Arrays.copyOf(holder, mySize);
+            Arrays.sort(holder);
         }
 
         public Pair myGetAt(int i)
@@ -128,7 +144,6 @@ public class MyMap<P, K, V>
         private void doesContain(Pair t)
         {
             contains = false;
-            //if any T in holder .equals t, return true
             for (Object i : holder
                     )
             {

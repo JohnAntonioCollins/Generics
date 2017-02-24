@@ -23,7 +23,7 @@ public class MyMapTest
     {
         testMap.myPut("knock", "answer");
         String actual = testMap.myGet("knock").toString();
-        //String expected = "fake";
+        //String expected = "fail";//fail test
         String expected = "answer";
         assertEquals("should say 'answer'", expected, actual);
     }
@@ -43,5 +43,14 @@ public class MyMapTest
         boolean actual = testMap.myIsEmpty();
         boolean expected = true;
         assertEquals("should be true, empty map", expected, actual);
+    }
+    @Test
+    public void myRemoveTest(){
+        for (int i = 0; i < 10; i++)
+        {
+            testMap.myPut(i, i*34);
+        }
+        testMap.myRemove(4);
+        boolean actual = testMap.
     }
 }
